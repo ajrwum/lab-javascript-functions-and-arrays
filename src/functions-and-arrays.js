@@ -84,8 +84,6 @@ function sum(mixedArray) {
     throw error;
   }
 }
-console.log(sum(mixedArr));
-
 
 
 
@@ -216,8 +214,142 @@ const matrix = [
   [20, 73, 35, 29, 78, 31, 90, 1, 74, 31, 49, 71, 48, 86, 81, 16, 23, 57, 5, 54],
   [1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 1, 89, 19, 67, 48]
 ];
+const smallMatrix = [
+  [ 1,  2, 3, 4, 5],
+  [ 1, 20, 3, 4, 5],
+  [ 1, 20, 3, 4, 5],
+  [ 1, 20, 3, 4, 5],
+  [ 1,  4, 3, 4, 5]
+];
 
-function greatestProduct() {}
+const matrixOf1 = [
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+];
+const matrixOf2 = [
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+];
+
+// function looping on all rows to find the largest product
+// hypothesis: 1. all rows have the same number of elements
+//             2. all columns have the same number of elements
+// returns the largest product of {nbAdjacentElements} found in all rows or 0 if empty arr
+const getLargestProdOnMatrixRows = (arr, nbAdjacentElements) => {
+  // initializing max index for looping on rows
+  const maxIdxRow = arr[0].length;
+  // console.log(`maxIdxRow`, maxIdxRow);
+  // initializing boundary index for evaluating the largest product on columns
+  const prodIdxCol= arr.length - nbAdjacentElements + 1;
+  // console.log(`prodIdxCol`, prodIdxCol);
+  // initializing the largest product for reference
+  let largestProduct = 0;
+  // looping through the matrix by rows
+  for (let row = 0 ; row < maxIdxRow ; row++) {
+    // moving on the row from left to right
+    for (let col = 0 ; col < prodIdxCol ; col++) {
+      // calculating horizontal product and comparing to reference to get the largest 
+      const product = arr[row][col] * arr[row][col+1] * arr[row][col+2] * arr[row][col+3];
+      // console.log(`product on row`, product);
+      if (product > largestProduct) largestProduct = product;
+    }
+  }
+  return largestProduct;
+};
+
+// function looping on all columns to find the largest product
+// hypothesis: 1. all rows have the same number of elements
+//             2. all columns have the same number of elements
+// returns the largest product of {nbAdjacentElements} found in all columns or 0 if empty arr
+const getLargestProdOnMatrixColumns = (arr, nbAdjacentElements) => {
+  // initializing max index for looping on columns
+  const maxIdxCol = arr.length;
+  // console.log(`maxIdxCol`, maxIdxCol);
+  // initializing boundary index for evaluating the largest product on rows
+  const prodIdxRow = arr[0].length - nbAdjacentElements + 1;
+  // console.log(`prodIdxRow`, prodIdxRow);
+  // initializing the largest product for reference
+  let largestProduct = 0;
+  // looping through the matrix by column
+  for (let col = 0 ; col < maxIdxCol ; col++) {
+    // moving on the column from top to bottom
+    for (let row = 0 ; row < prodIdxRow ; row++) {
+      // calculating vertical product and comparing to reference to get the largest 
+      const product = arr[row][col] * arr[row+1][col] * arr[row+2][col] * arr[row+3][col];
+      // console.log(`product on column`, product);
+      if (product > largestProduct) largestProduct = product;
+    }
+  }
+  return largestProduct;
+}
+
+function greatestProduct(arr) {
+  if (isArrayEmpty(arr)) return 0;
+  // initializing the number of adjacent elements to use for the product
+  const NB_ADJACENT_ELEMENTS = 4;
+  // getting the largest product found on rows
+  const largestOnRows = getLargestProdOnMatrixRows(arr, NB_ADJACENT_ELEMENTS);
+  // console.log(`largestOnRows`, largestOnRows);
+  // getting the largest product found on columns
+  const largestOnColumns = getLargestProdOnMatrixColumns(arr, NB_ADJACENT_ELEMENTS);
+  // console.log(`largestOnColumns`, largestOnColumns);
+  // returning the largest between both
+  const largestProduct = largestOnRows > largestOnColumns ? largestOnRows : largestOnColumns;
+  // console.log(largestProduct);
+  return largestProduct;
+}
+greatestProduct(matrix);
+greatestProduct(smallMatrix);
+greatestProduct(matrixOf1);
+greatestProduct(matrixOf2);
+
+
+
+
+// Iteration #8.1: Product of diagonals - Bonus
+function greatestProductOfDiagonals(arr) {
+  return 0;
+}
+greatestProductOfDiagonals(matrix);
+greatestProductOfDiagonals(smallMatrix);
+greatestProductOfDiagonals(matrixOf1);
+greatestProductOfDiagonals(matrixOf2);
 
 
 
